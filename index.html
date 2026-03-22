@@ -1,55 +1,177 @@
-<h1 align="center">Hi 👋, I'm Anurag Mishra</h1>
-<h3 align="center"> Tech Learner</h3>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anurag Mishra</title>  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">  <style>
+    :root {
+      --bg: #0a0f1c;
+      --card: #111827;
+      --accent: #38bdf8;
+      --accent2: #22c55e;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=anuragmishra-devdb&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
-</p>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
----
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
 
-<h2>🧠 About Me</h2>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-<ul>
-  <li>🔭 Currently working as <b>Purchase Manager & Assistant IT Manager</b></li>
-  <li>💡 Strong interest in <b>Technology, Automation, and Systems</b></li>
-  <li>📚 Learning <b>GitHub, IT workflows, and digital systems</b></li>
-  <li>⚡ Thinker mindset: I analyze deeply before acting</li>
-  <li>🎯 Goal: Build systems that reduce manual work and increase efficiency</li>
-</ul>
+    header {
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
 
----
+    header h1 {
+      font-size: 3.2rem;
+      color: var(--accent);
+      animation: fadeIn 1s ease-in-out;
+    }
 
-<h2>🛠️ Skills & Tools</h2>
+    header p {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 1.2rem;
+    }
 
-<p>
-  <img src="https://skillicons.dev/icons?i=github,html,css,js,linux" />
-</p>
+    .btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 26px;
+      background: linear-gradient(45deg, var(--accent), var(--accent2));
+      color: #000;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-<ul>
-  <li>💻 GitHub & Version Control</li>
-  <li>📊 Excel & Data Handling</li>
-  <li>🧾 Purchase & Inventory Systems</li>
-  <li>⚙️ Workflow Optimization</li>
-</ul>
+    .btn:hover {
+      transform: scale(1.05);
+    }
 
----
+    section {
+      margin-top: 70px;
+    }
 
-<h2>📈 What I’m Working On</h2>
+    h2 {
+      margin-bottom: 20px;
+      color: var(--accent2);
+    }
 
-<ul>
-  <li>🚀 Building my GitHub profile</li>
-  <li>📂 Creating useful repositories for real-world problems</li>
-  <li>🔄 Learning automation in daily office tasks</li>
-</ul>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
----
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      transition: 0.3s;
+      border: 1px solid #1f2937;
+    }
 
-<h2>🤝 Connect With Me</h2>
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+    }
 
-<p>
-  <a href="https://github.com/anuragmishra-devdb" target="_blank">GitHub</a>
-</p>
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
 
----
+    .quote {
+      background: var(--card);
+      padding: 25px;
+      border-left: 4px solid var(--accent2);
+      border-radius: 10px;
+      font-style: italic;
+      color: var(--muted);
+    }
 
-<h3 align="center">💭 "Focus on systems, not emotions. Results follow structure."</h3>
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style></head><body>  <div class="container"><header>
+  <h1>👋 Anurag Mishra</h1>
+  <p>Building systems. Thinking deeply. Improving daily.</p>
+  <a href="https://github.com/anuragmishra-devdb" class="btn">Explore My Work</a>
+</header>
+
+<section>
+  <h2>🧠 About Me</h2>
+  <p>
+    I am not here just to use technology. I am here to understand how it works.
+    I focus on clarity, fundamentals, and long-term growth.
+  </p>
+</section>
+
+<section>
+  <h2>⚙️ Focus</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Problem Solving</h3>
+      <p>Breaking complexity into simple logic.</p>
+    </div>
+
+    <div class="card">
+      <h3>System Thinking</h3>
+      <p>Understanding underlying structures.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consistency</h3>
+      <p>Daily improvement over random effort.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>📈 Philosophy</h2>
+  <div class="quote">
+    Most people chase tools. I focus on thinking.<br><br>
+    Most people want quick results. I focus on long-term clarity.
+  </div>
+</section>
+
+<section>
+  <h2>🎯 Direction</h2>
+  <p>
+    Building real understanding and creating meaningful work,
+    not just surface-level output.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Anurag Mishra</p>
+</footer>
+
+  </div></body>
+</html>
