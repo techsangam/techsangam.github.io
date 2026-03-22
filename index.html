@@ -6,56 +6,90 @@
   <title>TechSangam</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-      background: #0b0f1a;
-      color: #e5e7eb;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e2e8f0;
+      overflow-x: hidden;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2.8rem;
-      color: #38bdf8;
-    }
-
-    h2 {
-      margin-top: 40px;
-      color: #22c55e;
-    }
-
-    p {
-      color: #9ca3af;
-      font-size: 1.05rem;
-    }
-
-    .card {
-      background: #111827;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
+      font-size: 3rem;
+      font-weight: 600;
+      background: linear-gradient(to right, #38bdf8, #22c55e);
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .tagline {
-      color: #6b7280;
-      margin-top: -10px;
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 1.1rem;
     }
 
-    footer {
-      margin-top: 60px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 25px;
+      transition: 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: rgba(56,189,248,0.5);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    p {
+      color: #cbd5f5;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 80px;
       text-align: center;
-      color: #6b7280;
       font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    /* subtle floating animation */
+    .card:nth-child(1) { animation: float 6s ease-in-out infinite; }
+    .card:nth-child(2) { animation: float 7s ease-in-out infinite; }
+    .card:nth-child(3) { animation: float 8s ease-in-out infinite; }
+    .card:nth-child(4) { animation: float 9s ease-in-out infinite; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
     }
 
   </style>
@@ -63,76 +97,53 @@
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <h1>TechSangam</h1>
-  <p class="tagline">Where thinking meets systems.</p>
+    <h1>TechSangam</h1>
+    <p class="tagline">Clarity. Systems. Controlled Thinking.</p>
 
-  <div class="card">
-    <h2>About</h2>
-    <p>
-      TechSangam is not just a name. It represents a mindset.
-      A place where ideas are structured, not scattered.
-      Where clarity is built, not assumed.
-    </p>
+    <div class="grid">
 
-    <p>
-      This platform reflects a system-driven approach to technology,
-      decision-making, and personal growth.
-    </p>
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          A digital space built on structured thinking.
+          Focused on clarity over noise and systems over chaos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Philosophy</h2>
+        <p>
+          Most people react. Few observe.
+          Every decision is either control or drift.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Focus</h2>
+        <p>
+          Building systems, improving thinking,
+          and using technology as leverage.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Direction</h2>
+        <p>
+          Continuous refinement.
+          Less noise. More precision.
+          Evolving with intent.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 TechSangam
+    </div>
+
   </div>
-
-  <div class="card">
-    <h2>Philosophy</h2>
-    <p>
-      Most people operate on reaction.
-      TechSangam is built on observation.
-    </p>
-
-    <p>
-      Decisions are not driven by emotion.
-      They are driven by clarity, patterns, and long-term thinking.
-    </p>
-
-    <p>
-      Comfort creates stagnation.
-      Structure creates progress.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Focus</h2>
-    <p>
-      The focus is simple:
-    </p>
-
-    <p>
-      • Build systems that reduce chaos  
-      • Improve thinking through structure  
-      • Use technology as leverage, not distraction  
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Direction</h2>
-    <p>
-      This is an evolving space.
-      Not for showing everything.
-      But for refining what matters.
-    </p>
-
-    <p>
-      Every update reflects better clarity,
-      better thinking,
-      and stronger control.
-    </p>
-  </div>
-
-  <footer>
-    <p>© 2026 TechSangam</p>
-  </footer>
-
-</div>
 
 </body>
 </html>
